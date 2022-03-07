@@ -30,7 +30,7 @@
   "devDependencies": {
     "@pnpm/cli-utils": "workspace:0.6.50",
     "@pnpm/logger": "^4.0.0",
-    "@types/ramda": "0.27.39"
+    "@types/ramda": "0.28.0"
   },
   "dependencies": {
     "@pnpm/cli-meta": "workspace:2.0.2",

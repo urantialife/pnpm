@@ -41,13 +41,13 @@
     "@pnpm/prune-lockfile": "workspace:3.0.15",
     "@pnpm/read-project-manifest": "workspace:2.0.13",
     "@pnpm/types": "workspace:7.10.0",
-    "ramda": "^0.27.1",
+    "ramda": "^0.28.0",
     "rename-overwrite": "^4.0.2"
   },
   "funding": "https://opencollective.com/pnpm",
   "devDependencies": {
     "@pnpm/make-dedicated-lockfile": "workspace:0.2.25",
     "@pnpm/test-fixtures": "workspace:*",
-    "@types/ramda": "0.27.39"
+    "@types/ramda": "0.28.0"
   }
 }

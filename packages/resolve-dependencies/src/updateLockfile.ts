@@ -13,7 +13,7 @@ import getNpmTarballUrl from 'get-npm-tarball-url'
 import { KeyValuePair } from 'ramda'
 import isEmpty from 'ramda/src/isEmpty'
 import fromPairs from 'ramda/src/fromPairs'
-import merge from 'ramda/src/merge'
+import mergeRight from 'ramda/src/mergeRight'
 import partition from 'ramda/src/partition'
 import depPathToRef from './depPathToRef'
 import { ResolvedPackage } from './resolveDependencies'
@@ -202,7 +202,7 @@ function updateResolvedDeps (
         ]
       })
   )
-  return merge(
+  return mergeRight(
     prevResolvedDeps,
     newResolvedDeps
   )

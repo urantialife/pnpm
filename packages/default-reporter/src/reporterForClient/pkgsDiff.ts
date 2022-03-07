@@ -2,7 +2,7 @@ import * as logs from '@pnpm/core-loggers'
 import { PackageManifest } from '@pnpm/types'
 import * as Rx from 'rxjs'
 import { filter, map, mapTo, reduce, scan, startWith, take } from 'rxjs/operators'
-import merge from 'ramda/src/merge'
+import mergeRight from 'ramda/src/mergeRight'
 import difference from 'ramda/src/difference'
 
 export interface PackageDiff {
@@ -104,7 +104,7 @@ export default function (
   )
     .pipe(
       take(2),
-      reduce(merge, {} as any) // eslint-disable-line @typescript-eslint/no-explicit-any
+      reduce(mergeRight, {} as any) // eslint-disable-line @typescript-eslint/no-explicit-any
     )
 
   return Rx.combineLatest(
